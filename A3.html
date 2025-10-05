@@ -1,0 +1,88 @@
+<!-- Date: 03/09/202
+Objective : Build an HTML form that collects student details for registration. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form { border: 1px solid #ccc; padding: 15px; }
+    label { display: block; margin-top: 8px; }
+    hr { margin: 12px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+
+  <form action="submit_form.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Student Details</legend>
+
+      <!-- Full Name -->
+      <label for="name">Full Name:
+      <input type="text" id="name" name="fullname" placeholder="Enter your full name" required></label>
+      <hr>
+
+      <!-- Email -->
+      <label for="email">Email Address:
+      <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+      <hr>
+
+      <!-- Password -->
+      <label for="password">Password:
+      <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" required></label>
+      <hr>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:
+      <input type="date" id="dob" name="dob"></label>
+      <hr>
+
+      <!-- Gender -->
+      <label>Gender:
+      <input type="radio" id="male" name="gender" value="Male"> Male
+      <input type="radio" id="female" name="gender" value="Female"> Female
+      <input type="radio" id="other" name="gender" value="Other"> Other </label>
+      <hr>
+
+      <!-- Course Selection -->
+      <label for="course">Select Course:
+      <select id="course" name="course">
+        <option value="">--Choose a Course--</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.Sc">B.Sc</option>
+        <option value="B.A">B.A</option>
+        <option value="MBA">MBA</option>
+      </select></label>
+      <hr>
+
+      <!-- Skills -->
+      <label>Skills:
+      <input type="checkbox" id="html" name="skills" value="HTML"> HTML
+      <input type="checkbox" id="css" name="skills" value="CSS"> CSS
+      <input type="checkbox" id="js" name="skills" value="JavaScript"> JavaScript
+      <input type="checkbox" id="python" name="skills" value="Python"> Python</label>
+      <hr>
+
+      <!-- Upload Photo -->
+      <label for="photo">Upload Photo:
+      <input type="file" id="photo" name="photo" accept="image/*"> </label>
+      <hr>
+
+      <!-- Comments -->
+      <label for="comments">Comments:
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea></label>
+      <hr>
+
+      <!-- Buttons -->
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+
+</body>
+</html>

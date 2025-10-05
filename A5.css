@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://thvnext.bing.com/th/id/OIP.SLxGalW-td6IK3OU5R6snwHaEK?o=7&cb=ucfimgc2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(93, 93, 91);
+    color: white;
+}
+
+.main{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 0px 0px 7px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(157, 40, 157);
+}
+
+input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 0px 0px 7px 0px;
+    font-size: 16px;
+    color: green;
+}
+
+button{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(39, 91, 232);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(7, 105, 56);
+}
+
+.total{
+    text-align: center;
+    font-size: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}

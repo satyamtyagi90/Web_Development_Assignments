@@ -1,0 +1,74 @@
+/* Page Background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Card using ID selector */
+#profile-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Profile Image - circular */
+#profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #005C8C;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+#profile-card h2 {
+  color: #005C8C;
+  font-family: 'Georgia', serif;
+}
+
+/* Paragraph */
+#profile-card p {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Hobbies list */
+#profile-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobby {
+  background-color: #e6f2ff;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Button */
+#profile-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #005C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#profile-card button:hover {
+  background-color: #003366;
+}

@@ -1,0 +1,36 @@
+<!-- Date : 04/09/2025
+Objective - Create a Webpage using an HTML form that shows various products and their price. The forms should take quantity as input. Add a button called “Calculate Total Price.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="A5.css">
+    <title>Price Calculator</title>
+</head>
+<body>
+    <h1>Online Items and Prices</h1>
+    <div class="main">
+        <label for="input">Laptop ($800 each)</label><br>
+        <input type="text" id="laptop" value="0" min="0" /><br>
+
+        <label for="input">Smartphone ($400 each)</label><br>
+        <input type="text" id="smartphone" value="0" min="0" /><br>
+
+        <label for="input">Headphones ($50 each)</label><br>
+        <input type="text" id="headphones" value="0" min="0" /><br>
+
+        <label for="input">Tablet ($300 each)</label><br>
+        <input type="text" id="tablet" value="0" min="0" /><br>
+
+        <button id="calculate">Calculate Total Price</button>
+
+    </div>
+
+    <div class="total">
+        <h2>Total Price: $<span id="totalPrice">0</span></h2>
+    </div>
+</body>
+</html>
